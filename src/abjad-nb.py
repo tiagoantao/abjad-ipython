@@ -4,7 +4,7 @@ import tempfile
 
 from IPython.core.display import display_png
 
-from wand.image import Image
+from wand.image import Image as wimg  # There are other images from ipython
 
 from abjad.tools import systemtools, topleveltools
 
@@ -16,7 +16,7 @@ def _get_png(expr):
     ly_file_path, abjad_formatting_time = result
     cmd = 'lilypond --png -o%s/out %s/out.ly' % (tmpdir, tmpdir)
     result = systemtools.IOManager.spawn_subprocess(cmd)
-    img = Image(filename=tmpdir + os.sep + 'out.png')
+    img = wimg(filename=tmpdir + os.sep + 'out.png')
     img.trim()
     img.save(filename=tmpdir + os.sep + 'trim.png')
     f = open(tmpdir + os.sep + 'trim.png', 'rb')
