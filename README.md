@@ -17,7 +17,9 @@ Requirements
 
 Get abjad from github. On ubuntu, the default ipython is not enough, get 2.0 (from github, pip or conda).
 
-apt-get lilypond python3-wand python3-ply
+The default lilypond version of the latest ubuntu is not enough. You need at least 2.17
+
+apt-get python3-wand python3-ply
 
 configobj: pip3 install configobj --user
 
