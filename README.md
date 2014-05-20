@@ -60,4 +60,7 @@ just add
 
 (or whatever location you have for abjad-nb.py)
 
+Now, abjad's show function will be replaced by one that will pipe the results
+to the notebook. This includes the ability to pipe multi-page outputs.
+
 ./tiago
