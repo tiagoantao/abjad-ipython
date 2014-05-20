@@ -7,6 +7,7 @@ abjad (a musical notation system in Python).
 Caveat: The current version was tested only on Python 3.4. If you have
 problems with previous versions, please do contact me.
 
+
 Requirements
 ------------
 
@@ -16,6 +17,7 @@ Requirements
 4. wand (a Python ImageMagick library)
 5. configobj
 6. ply
+
 
 Installation instructions
 -------------------------
@@ -40,5 +42,22 @@ The examples
 A few examples are provided, there were taken from abjad documentation.
 I am not the author of them (other than the conversion to notebooks).
 
+
+How does it work?
+-----------------
+
+The system was designed to be as transparent as possible: after the typical
+
+```python
+from abjad import *
+```
+
+just add
+
+```python
+%run ../src/abjad-nb.py
+```
+
+(or whatever location you have for abjad-nb.py)
 
 ./tiago
