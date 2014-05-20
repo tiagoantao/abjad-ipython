@@ -1,15 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+    abjad-ipython
+    ~~~~~~~~~~~~~
+
+    Interface between IPython Notebook and Abjad.
+
+    :copyright: Copyright 2014 by Tiago Antao.
+    :license: GNU Affero, see LICENSE for details.
+"""
 import os
 import shutil
 import tempfile
 
 from IPython.core.display import display_png
 
-from wand.image import Image as wimg  # There are other images from ipython
+from wand.image import Image as wimg  # There is another Image from ipython
 
 from abjad.tools import systemtools, topleveltools
 
 
 def _get_png(expr):
+    """Calls lilypond and converts output to (multi-page) PNGs."""
     pngs = []
     tmpdir = tempfile.mkdtemp()
     agent = topleveltools.persist(expr)
@@ -32,7 +43,7 @@ def _get_png(expr):
                     raise
                 else:
                     break
-  
+
     for img in imgs:
         img.trim()
         img.save(filename=tmpdir + os.sep + 'trim.png')
@@ -45,6 +56,7 @@ def _get_png(expr):
 
 
 def show(expr):
+    """A replacement for Ajbad's show function for IPython Notebook"""
     assert '__illustrate__' in dir(expr)
     pngs = _get_png(expr)
     for png in pngs:
