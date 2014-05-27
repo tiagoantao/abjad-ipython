@@ -8,6 +8,13 @@ Caveat: The current version was tested only on Python 3.4. If you have
 problems with previous versions, please do contact me.
 
 
+Important note
+--------------
+
+This has been now integrated into abjad. So no need to use this project.
+It will stay here for future reference.
+
+
 Requirements
 ------------
 
