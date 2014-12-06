@@ -1,0 +1,16 @@
+package:
+    name: abjad-ipython
+    version: 1.0
+
+source:
+    path: ../
+
+requirements:
+    run:
+        - python
+        - ipython
+        - abjad
+
+about:
+    home: https://github.com/tiagoantao/abjad-ipython
+    license: CC 1.0 Universal License
