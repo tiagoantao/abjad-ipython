@@ -73,6 +73,7 @@ to the notebook. This includes the ability to pipe multi-page outputs.
 License
 -------
 
-This code is distributed under a CC 1.0 Universal license.
+This code is distributed under a CC 1.0 Universal license. See the file
+LICENSE.txt for details.
 
 ./tiago
