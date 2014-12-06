@@ -3,7 +3,7 @@ package:
     version: 1.0
 
 source:
-    path: ../
+    path: ../notebooks
 
 requirements:
     run:
@@ -14,3 +14,7 @@ requirements:
 about:
     home: https://github.com/tiagoantao/abjad-ipython
     license: CC 1.0 Universal License
+
+app:
+    entry: ipython notebook
+    summary: Abjad examples inside IPython Notebook
