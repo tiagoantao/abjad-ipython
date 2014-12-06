@@ -70,4 +70,9 @@ just add
 Now, abjad's show function will be replaced by one that will pipe the results
 to the notebook. This includes the ability to pipe multi-page outputs.
 
+License
+-------
+
+This code is distributed under a CC 1.0 Universal license.
+
 ./tiago
