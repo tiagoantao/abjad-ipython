@@ -7,9 +7,9 @@ source:
 
 requirements:
     run:
-        - python
-        - ipython
-        - abjad
+        - python >=3.3
+        - ipython >=2.3
+        - abjad ==2.15
 
 about:
     home: https://github.com/tiagoantao/abjad-ipython
